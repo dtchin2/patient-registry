@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Registry</title>
+</head>
+<body>
+    <div th:insert="header"></div>
+    <br/>
+    <br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." th:src="@{img/patient.jpg}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Add a new patient to the system by adding new patient information.
+                         View all patients that are currently in the system. Remove patients who are no longer a part of the
+                         hospital system.</p>
+                        <a href="#" th:href="@{viewPatient}" class="btn btn-primary">Patients</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." th:src="@{img/doctor.jpg}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Add a new recently hired doctor to the system.
+                            View all doctors that are currently in the system. Remove doctors who are no longer a part of the
+                            hospital.</p>
+                        <a href="#" class="btn btn-primary">Doctors</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." th:src="@{img/appt.jpg}"  class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Add a new appointment to the system.
+                            View all appointments that are currently in the system. Remove appointments that are to be cancelled.</p>
+                        <a href="#" class="btn btn-primary">Appointments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
